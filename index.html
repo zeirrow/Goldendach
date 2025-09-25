@@ -147,61 +147,70 @@
         </div>
     </header>
 
-    <section id="hero" class="relative bg-dark-charcoal text-white pt-20 pb-28 md:pt-32 md:pb-40 overflow-hidden"
-        style="background-image: url('https://images.unsplash.com/photo-1579737227494-013620f4c02f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
-        <div class="absolute inset-0 bg-dark-charcoal/70"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-up">
-            <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
-                Reliable Roofing — <span class="text-primary-red">Repairs & New Roofs</span>
-            </h1>
-            <p class="text-xl text-slate-200 max-w-3xl mx-auto mb-10">
-                Emergency repairs, installations, and inspections across [CITY]. Free quotes in 24 hours.
-            </p>
+<section id="hero" class="relative bg-dark-charcoal text-white pt-20 pb-28 md:pt-32 md:pb-40 overflow-hidden">
+    <!-- ✅ Background Video -->
+    <video autoplay muted loop playsinline poster="https://cdn.pixabay.com/photo/2017/03/02/02/12/roof-2117040_1280.jpg"
+        class="absolute inset-0 w-full h-full object-cover z-0">
+        <source src="https://cdn.pixabay.com/video/2017/10/12/12437-238795767_large.mp4" type="video/mp4">
+        <!-- Fallback text for browsers that don't support video -->
+        Your browser does not support the video tag.
+    </video>
 
-            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-12">
-                <a href="#contact"
-                    class="inline-flex justify-center items-center h-[52px] px-8 bg-primary-red hover:bg-[#B93629] text-white text-lg font-bold rounded-md shadow-xl transition-all duration-300 transform hover:scale-[1.03] focus:ring-4 focus:ring-primary-red/50">
-                    Get a Free Quote
-                </a>
-                <a href="#services"
-                    class="inline-flex justify-center items-center h-[52px] px-8 bg-transparent border-2 border-white text-white text-lg font-medium rounded-md hover:bg-white/10 transition-all duration-300 transform hover:scale-105">
-                    View Services
-                </a>
-            </div>
+    <!-- ✅ Dark Overlay for Readability -->
+    <div class="absolute inset-0 bg-dark-charcoal/70 z-10"></div>
 
-            <div class="flex flex-wrap justify-center gap-4 text-sm font-medium">
-                <span class="inline-flex items-center px-3 py-1 bg-white/10 rounded-full text-green-300">
-                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 12l2 2 4-4m5.618-4.143a2 2 0 01.385 2.143L19 14l-2 2-2-2-4-4L5 10l-2 2a2 2 0 00-.385 2.143A2 2 0 004 17l4 4a2 2 0 001.414.586A2 2 0 0011 21l8-8a2 2 0 00.586-1.414A2 2 0 0019 9h-4a2 2 0 00-2 2v4a2 2 0 002 2h2">
-                        </path>
-                    </svg>
-                    LICENSED & BONDED
-                </span>
-                <span class="inline-flex items-center px-3 py-1 bg-white/10 rounded-full text-green-300">
-                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 12l2 2 4-4m5.618-4.143a2 2 0 01.385 2.143L19 14l-2 2-2-2-4-4L5 10l-2 2a2 2 0 00-.385 2.143A2 2 0 004 17l4 4a2 2 0 001.414.586A2 2 0 0011 21l8-8a2 2 0 00.586-1.414A2 2 0 0019 9h-4a2 2 0 00-2 2v4a2 2 0 002 2h2">
-                        </path>
-                    </svg>
-                    FULLY INSURED
-                </span>
-                <span class="inline-flex items-center px-3 py-1 bg-white/10 rounded-full text-green-300">
-                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V6m0 4v2m0 2v2m0 4h.01M12 3v18M4 6h16M4 18h16">
-                        </path>
-                    </svg>
-                    5-YEAR WARRANTY
-                </span>
-            </div>
+    <!-- ✅ Hero Content -->
+    <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-up">
+        <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+            Reliable Roofing — <span class="text-primary-red">Repairs & New Roofs</span>
+        </h1>
+        <p class="text-xl text-slate-200 max-w-3xl mx-auto mb-10">
+            Emergency repairs, installations, and inspections across [CITY]. Free quotes in 24 hours.
+        </p>
 
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-12">
+            <a href="#contact"
+                class="inline-flex justify-center items-center h-[52px] px-8 bg-primary-red hover:bg-[#B93629] text-white text-lg font-bold rounded-md shadow-xl transition-all duration-300 transform hover:scale-[1.03] focus:ring-4 focus:ring-primary-red/50">
+                Get a Free Quote
+            </a>
+            <a href="#services"
+                class="inline-flex justify-center items-center h-[52px] px-8 bg-transparent border-2 border-white text-white text-lg font-medium rounded-md hover:bg-white/10 transition-all duration-300 transform hover:scale-105">
+                View Services
+            </a>
         </div>
-    </section>
 
+        <div class="flex flex-wrap justify-center gap-4 text-sm font-medium">
+            <span class="inline-flex items-center px-3 py-1 bg-white/10 rounded-full text-green-300">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 12l2 2 4-4m5.618-4.143a2 2 0 01.385 2.143L19 14l-2 2-2-2-4-4L5 10l-2 2a2 2 0 00-.385 2.143A2 2 0 004 17l4 4a2 2 0 001.414.586A2 2 0 0011 21l8-8a2 2 0 00.586-1.414A2 2 0 0019 9h-4a2 2 0 00-2 2v4a2 2 0 002 2h2">
+                    </path>
+                </svg>
+                LICENSED & BONDED
+            </span>
+            <span class="inline-flex items-center px-3 py-1 bg-white/10 rounded-full text-green-300">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 12l2 2 4-4m5.618-4.143a2 2 0 01.385 2.143L19 14l-2 2-2-2-4-4L5 10l-2 2a2 2 0 00-.385 2.143A2 2 0 004 17l4 4a2 2 0 001.414.586A2 2 0 0011 21l8-8a2 2 0 00.586-1.414A2 2 0 0019 9h-4a2 2 0 00-2 2v4a2 2 0 002 2h2">
+                    </path>
+                </svg>
+                FULLY INSURED
+            </span>
+            <span class="inline-flex items-center px-3 py-1 bg-white/10 rounded-full text-green-300">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V6m0 4v2m0 2v2m0 4h.01M12 3v18M4 6h16M4 18h16">
+                    </path>
+                </svg>
+                5-YEAR WARRANTY
+            </span>
+        </div>
+    </div>
+</section>
+    <!-- ✅ Floating CTA Button for Mobile -->
     <a href="#contact"
         class="fixed bottom-4 right-4 z-50 lg:hidden inline-flex items-center justify-center w-auto h-12 px-6 bg-primary-red hover:bg-[#B93629] text-white text-sm font-bold rounded-full shadow-2xl transition-all duration-300 transform hover:scale-[1.05]">
         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -640,12 +649,12 @@
             <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
                 <img class="h-10 opacity-70 hover:opacity-100 transition-opacity duration-300"
                     src="./img/LOC8NEARMEl.png" alt="Manufacturer Logo 1">
-                <img class="h-10 opacity-70 hover:opacity-100 transition-opacity duration-300"
-                    src="./img/1.png" alt="Affiliation Logo 2">
-                <img class="h-10 opacity-70 hover:opacity-100 transition-opacity duration-300"
-                    src="./img/2.png" alt="Manufacturer Logo 3">
-                <img class="h-10 opacity-70 hover:opacity-100 transition-opacity duration-300"
-                    src="./img/3.png" alt="Affiliation Logo 4">
+                <img class="h-10 opacity-70 hover:opacity-100 transition-opacity duration-300" src="./img/1.png"
+                    alt="Affiliation Logo 2">
+                <img class="h-10 opacity-70 hover:opacity-100 transition-opacity duration-300" src="./img/2.png"
+                    alt="Manufacturer Logo 3">
+                <img class="h-10 opacity-70 hover:opacity-100 transition-opacity duration-300" src="./img/3.png"
+                    alt="Affiliation Logo 4">
             </div>
         </div>
     </section>
