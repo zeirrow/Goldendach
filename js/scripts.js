@@ -28,47 +28,80 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// JS Comment: Simple client-side form validation and mailto fallback.
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
-    const form = e.target;
-    const msg = document.getElementById("form-message");
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    // Basic required field check
-    let isValid = true;
-    form.querySelectorAll("[required]").forEach((input) => {
-      if (!input.value.trim()) {
-        isValid = false;
-        input.classList.add("ring-2", "ring-primary-red");
-      } else {
-        input.classList.remove("ring-2", "ring-primary-red");
-      }
-    });
+  const form = e.target;
+  const msg = document.getElementById("form-message");
 
-    if (isValid) {
-      // Fallback to mailto if no backend is present
-      const name = form.elements["name"].value;
-      const email = form.elements["email"].value;
-      const phone = form.elements["phone"].value;
-      const service = form.elements["service-interest"].value;
-      const address = form.elements["address"].value || "N/A";
-      const message = form.elements["message"].value;
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phonePattern = /^[0-9+\-\s()]{6,}$/; // basic phone validation
 
-      const subject = `Quote Request from ${name}`;
-      const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AService Interest: ${service}%0D%0AAddress: ${address}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+  let isValid = true;
 
-      // Use the mailto protocol for simple form submission
-      window.location.href = `mailto:goldendach@yahoo.com?subject=${subject}&body=${body}`;
-
-      msg.textContent =
-        "Thank you! Your request is being sent via your email client.";
-      form.reset();
+  // Validate each required input
+  form.querySelectorAll("[required]").forEach((input) => {
+    if (!input.value.trim()) {
+      isValid = false;
+      input.classList.add("ring-2", "ring-primary-red");
     } else {
-      msg.textContent = "Please fill out all required fields.";
-      msg.classList.add("text-primary-red");
+      input.classList.remove("ring-2", "ring-primary-red");
     }
+  });
+
+  // Additional validation: email format
+  const emailInput = form.elements["email"];
+  if (!emailPattern.test(emailInput.value)) {
+    isValid = false;
+    emailInput.classList.add("ring-2", "ring-primary-red");
+    msg.textContent = "Please enter a valid email address.";
+    msg.classList.add("text-primary-red");
+    return;
+  }
+
+  // Phone number format
+  const phoneInput = form.elements["phone"];
+  if (!phonePattern.test(phoneInput.value)) {
+    isValid = false;
+    phoneInput.classList.add("ring-2", "ring-primary-red");
+    msg.textContent = "Please enter a valid phone number.";
+    msg.classList.add("text-primary-red");
+    return;
+  }
+
+  if (isValid) {
+    const name = form.elements["name"].value;
+    const email = form.elements["email"].value;
+    const phone = form.elements["phone"].value;
+    const service = form.elements["service-interest"].value;
+    const address = form.elements["address"].value || "N/A";
+    const message = form.elements["message"].value;
+
+    const subject = encodeURIComponent(`Quote Request from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nService Interest: ${service}\nAddress: ${address}\n\nMessage:\n${message}`
+    );
+
+    // mailto fallback
+    window.location.href = `mailto:goldendach@yahoo.com?subject=${subject}&body=${body}`;
+
+    msg.textContent =
+      "✅ Thank you! Your request is being sent via your email client.";
+    msg.classList.remove("text-primary-red");
+    msg.classList.add("text-green-400");
+    form.reset();
+  } else {
+    msg.textContent = "⚠️ Please fill out all required fields.";
+    msg.classList.add("text-primary-red");
+  }
+});
+
+// Optional: live input feedback (removes red border when typing)
+document.querySelectorAll("#contact-form input, #contact-form textarea, #contact-form select")
+  .forEach((el) => {
+    el.addEventListener("input", () => {
+      el.classList.remove("ring-2", "ring-primary-red");
+    });
   });
 
 // JS Comment: Accordion functionality for FAQ section.
