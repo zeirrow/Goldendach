@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliable Roofing Co. | Expert Repairs & New Roof Installations</title>
+    <meta name="description"
+        content="Expert, licensed, and insured roofing services in [CITY]. We offer emergency repairs, new installations, and free, fast quotes.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[YOUR_WEBSITE_URL]">
+    <meta property="og:title" content="Reliable Roofing Co. | Expert Repairs & New Roof Installations">
+    <meta property="og:description"
+        content="Expert, licensed, and insured roofing services in [CITY]. We offer emergency repairs, new installations, and free, fast quotes.">
+    <meta property="og:image" content="[PLACEHOLDER_OG_IMAGE_URL]">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#D93F2F', // Roofing Red Accent
+                        'dark-charcoal': '#0B1220', // Dark Text/Background
+                        'warm-neutral': '#F8FAFC', // Light Background
+                        'slate-muted': '#64748B', // Muted Gray
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    spacing: {
+                        '128': '32rem',
+                        '160': '40rem',
+                    }
+                },
+            }
+        }
+    </script>
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Reliable Roofing Co.",
+      "image": "[PLACEHOLDER_LOGO_URL]",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main St",
+        "addressLocality": "[CITY]",
+        "addressRegion": "[STATE]",
+        "postalCode": "12345"
+      },
+      "telephone": "+1-555-ROOF-NOW",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      ],
+      "areaServed": {
+        "@type": "State",
+        "name": "[STATE_OR_REGION]"
+      }
+    }
+    </script>
+</head>
+
+<body class="font-sans text-dark-charcoal bg-warm-neutral antialiased">
+
+    <header class="sticky top-0 z-50 bg-warm-neutral/95 backdrop-blur-sm shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="text-2xl font-heading font-bold text-dark-charcoal tracking-tight">
+                    <span class="text-primary-red">Golden</span>dach
+                </a>
+
+                <nav class="hidden lg:flex space-x-8" aria-label="Main Navigation">
+                    <a href="#services"
+                        class="text-slate-muted hover:text-dark-charcoal transition-colors font-medium">Services</a>
+                    <a href="#process"
+                        class="text-slate-muted hover:text-dark-charcoal transition-colors font-medium">Process</a>
+                    <a href="#gallery"
+                        class="text-slate-muted hover:text-dark-charcoal transition-colors font-medium">Gallery</a>
+                    <a href="#testimonials"
+                        class="text-slate-muted hover:text-dark-charcoal transition-colors font-medium">Reviews</a>
+                    <a href="#faq"
+                        class="text-slate-muted hover:text-dark-charcoal transition-colors font-medium">FAQ</a>
+                </nav>
+
+                <a href="tel:+49017673851162"
+                    class="bg-primary-red hover:bg-dark-charcoal text-white font-bold py-2 px-4 rounded-md shadow-lg transition-all duration-300 transform hover:scale-105 hidden sm:inline-flex items-center h-11">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-3.28a1 1 0 01-.948-.684l-1.498-4.493a1 1 0 01.502-1.21l2.257-1.13a11.042 11.042 0 00-5.516-5.516l-1.13 2.257a1 1 0 01-1.21.502l-4.493-1.498A1 1 0 013 7.72V5z">
+                        </path>
+                    </svg>
+                    49-017673851162
+                </a>
+
+                <button id="mobile-menu-button" class="lg:hidden text-dark-charcoal focus:outline-none"
+                    aria-label="Toggle menu" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-warm-neutral shadow-inner border-t border-slate-200">
+            <nav class="px-2 pt-2 pb-3 space-y-1" aria-label="Mobile Navigation">
+                <a href="#services"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-dark-charcoal hover:bg-slate-100">Services</a>
+                <a href="#process"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-dark-charcoal hover:bg-slate-100">Process</a>
+                <a href="#gallery"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-dark-charcoal hover:bg-slate-100">Gallery</a>
+                <a href="#testimonials"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-dark-charcoal hover:bg-slate-100">Reviews</a>
+                <a href="#faq"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-dark-charcoal hover:bg-slate-100">FAQ</a>
+                <a href="#contact"
+                    class="block px-3 py-2 rounded-md text-base font-medium bg-primary-red text-white text-center mt-2 hover:bg-dark-charcoal">Get
+                    a Free Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="relative bg-dark-charcoal text-white pt-20 pb-28 md:pt-32 md:pb-40 overflow-hidden"
+        style="background-image: url('https://images.unsplash.com/photo-1579737227494-013620f4c02f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-dark-charcoal/70"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-up">
+            <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+                Reliable Roofing — <span class="text-primary-red">Repairs & New Roofs</span>
+            </h1>
+            <p class="text-xl text-slate-200 max-w-3xl mx-auto mb-10">
+                Emergency repairs, installations, and inspections across [CITY]. Free quotes in 24 hours.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-12">
+                <a href="#contact"
+                    class="inline-flex justify-center items-center h-[52px] px-8 bg-primary-red hover:bg-[#B93629] text-white text-lg font-bold rounded-md shadow-xl transition-all duration-300 transform hover:scale-[1.03] focus:ring-4 focus:ring-primary-red/50">
+                    Get a Free Quote
+                </a>
+                <a href="#services"
+                    class="inline-flex justify-center items-center h-[52px] px-8 bg-transparent border-2 border-white text-white text-lg font-medium rounded-md hover:bg-white/10 transition-all duration-300 transform hover:scale-105">
+                    View Services
+                </a>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-medium">
+                <span class="inline-flex items-center px-3 py-1 bg-white/10 rounded-full text-green-300">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m5.618-4.143a2 2 0 01.385 2.143L19 14l-2 2-2-2-4-4L5 10l-2 2a2 2 0 00-.385 2.143A2 2 0 004 17l4 4a2 2 0 001.414.586A2 2 0 0011 21l8-8a2 2 0 00.586-1.414A2 2 0 0019 9h-4a2 2 0 00-2 2v4a2 2 0 002 2h2">
+                        </path>
+                    </svg>
+                    LICENSED & BONDED
+                </span>
+                <span class="inline-flex items-center px-3 py-1 bg-white/10 rounded-full text-green-300">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m5.618-4.143a2 2 0 01.385 2.143L19 14l-2 2-2-2-4-4L5 10l-2 2a2 2 0 00-.385 2.143A2 2 0 004 17l4 4a2 2 0 001.414.586A2 2 0 0011 21l8-8a2 2 0 00.586-1.414A2 2 0 0019 9h-4a2 2 0 00-2 2v4a2 2 0 002 2h2">
+                        </path>
+                    </svg>
+                    FULLY INSURED
+                </span>
+                <span class="inline-flex items-center px-3 py-1 bg-white/10 rounded-full text-green-300">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V6m0 4v2m0 2v2m0 4h.01M12 3v18M4 6h16M4 18h16">
+                        </path>
+                    </svg>
+                    5-YEAR WARRANTY
+                </span>
+            </div>
+
+        </div>
+    </section>
+
+    <a href="#contact"
+        class="fixed bottom-4 right-4 z-50 lg:hidden inline-flex items-center justify-center w-auto h-12 px-6 bg-primary-red hover:bg-[#B93629] text-white text-sm font-bold rounded-full shadow-2xl transition-all duration-300 transform hover:scale-[1.05]">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 7V3m8 4V3m-4 9v4m-6 3h12a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+        Get a Quote Now
+    </a>
+
+    <section id="services" class="py-16 sm:py-24 bg-warm-neutral">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-center mb-4 text-dark-charcoal fade-in-up">
+                Our Comprehensive Roofing Services
+            </h2>
+            <p class="text-lg text-slate-muted text-center max-w-2xl mx-auto mb-12 fade-in-up">
+                From emergency fixes to full installations, our certified team handles all your residential and
+                commercial roofing needs.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-primary-red hover:border-t-[6px] flex flex-col fade-in-up"
+                    style="transition-delay: 0.1s;">
+                    <div class="text-primary-red mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6V4m0 2a2 2 0 002-2m-2 2a2 2 0 012-2m-2 2v4m0 2v4m0 0a2 2 0 002-2m-2 2a2 2 0 012-2m-2 2H6m6 0h6">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-dark-charcoal">Roof Repair & Maintenance
+                    </h3>
+                    <p class="text-slate-muted flex-grow mb-4">
+                        Quick and reliable solutions for leaks, storm damage, missing shingles, and preventative
+                        maintenance to extend your roof's life.
+                    </p>
+                    <a href="#contact"
+                        class="text-primary-red font-semibold hover:text-dark-charcoal transition-colors self-start">Request
+                        Repair &rarr;</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-primary-red hover:border-t-[6px] flex flex-col fade-in-up"
+                    style="transition-delay: 0.2s;">
+                    <div class="text-primary-red mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-dark-charcoal">New Roof Installations</h3>
+                    <p class="text-slate-muted flex-grow mb-4">
+                        Complete installation of new roofing systems for new builds and extensions. We work with
+                        asphalt, metal, tile, and flat roofs.
+                    </p>
+                    <a href="#contact"
+                        class="text-primary-red font-semibold hover:text-dark-charcoal transition-colors self-start">Start
+                        a Project &rarr;</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-primary-red hover:border-t-[6px] flex flex-col fade-in-up"
+                    style="transition-delay: 0.3s;">
+                    <div class="text-primary-red mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-dark-charcoal">Full Roof Replacement</h3>
+                    <p class="text-slate-muted flex-grow mb-4">
+                        When repair isn't enough, we provide stress-free full roof tear-offs and replacements, ensuring
+                        a lifetime of protection.
+                    </p>
+                    <a href="#contact"
+                        class="text-primary-red font-semibold hover:text-dark-charcoal transition-colors self-start">Get
+                        a Replacement Quote &rarr;</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-primary-red hover:border-t-[6px] flex flex-col fade-in-up"
+                    style="transition-delay: 0.4s;">
+                    <div class="text-primary-red mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 21h4m-2-4v4m0-4h.01M3 8l9-5 9 5m0 0v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8m5.5-2a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zM19 6.5a2.5 2.5 0 10-5 0 2.5 2.5 0 005 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-dark-charcoal">Detailed Roof Inspections
+                    </h3>
+                    <p class="text-slate-muted flex-grow mb-4">
+                        Comprehensive assessments for insurance claims, real estate transactions, or preventative
+                        check-ups. Detailed reports provided.
+                    </p>
+                    <a href="#contact"
+                        class="text-primary-red font-semibold hover:text-dark-charcoal transition-colors self-start">Schedule
+                        Inspection &rarr;</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-primary-red hover:border-t-[6px] flex flex-col fade-in-up"
+                    style="transition-delay: 0.5s;">
+                    <div class="text-primary-red mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.457-1.723 1.541-3.045L12.9 3.906a1.99 1.99 0 00-3.8 0L3.3 17.955c-.916 1.322.001 3.045 1.54 3.045z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-dark-charcoal">24/7 Emergency Repairs</h3>
+                    <p class="text-slate-muted flex-grow mb-4">
+                        Storm damage? Urgent leak? We're on call 24 hours a day to secure your property and prevent
+                        further water damage.
+                    </p>
+                    <a href="tel:+1555ROOFNOW"
+                        class="text-primary-red font-semibold hover:text-dark-charcoal transition-colors self-start">Call
+                        Emergency Line &rarr;</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-primary-red hover:border-t-[6px] flex flex-col fade-in-up"
+                    style="transition-delay: 0.6s;">
+                    <div class="text-primary-red mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-dark-charcoal">Gutter & Drainage Systems
+                    </h3>
+                    <p class="text-slate-muted flex-grow mb-4">
+                        Seamless gutter installation, cleaning, and repair to ensure proper water diversion and protect
+                        your foundation and landscaping.
+                    </p>
+                    <a href="#contact"
+                        class="text-primary-red font-semibold hover:text-dark-charcoal transition-colors self-start">Gutter
+                        Service &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="value-props" class="py-16 sm:py-24 bg-dark-charcoal text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-center mb-12 fade-in-up">
+                Why Homeowners Choose <span class="text-primary-red">Goldendach</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-dark-charcoal/50 border border-slate-700 rounded-xl shadow-lg fade-in-up"
+                    style="transition-delay: 0.1s;">
+                    <p class="text-5xl font-extrabold font-heading text-primary-red mb-2">15+</p>
+                    <h3 class="text-xl font-heading font-semibold mb-2">Years of Experience</h3>
+                    <p class="text-slate-400">Proven track record with thousands of successful projects. We know what
+                        works in our local climate.</p>
+                </div>
+
+                <div class="text-center p-6 bg-dark-charcoal/50 border border-slate-700 rounded-xl shadow-lg fade-in-up"
+                    style="transition-delay: 0.2s;">
+                    <p class="text-5xl font-extrabold font-heading text-primary-red mb-2">100%</p>
+                    <h3 class="text-xl font-heading font-semibold mb-2">Licensed & Insured</h3>
+                    <p class="text-slate-400">Complete peace of mind. We carry full liability and workers' compensation
+                        insurance.</p>
+                </div>
+
+                <div class="text-center p-6 bg-dark-charcoal/50 border border-slate-700 rounded-xl shadow-lg fade-in-up"
+                    style="transition-delay: 0.3s;">
+                    <p class="text-5xl font-extrabold font-heading text-primary-red mb-2">5-Year</p>
+                    <h3 class="text-xl font-heading font-semibold mb-2">Workmanship Warranty</h3>
+                    <p class="text-slate-400">We stand by our work. All new installations come with a comprehensive
+                        labor guarantee.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-16 sm:py-24 bg-warm-neutral">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-center mb-12 text-dark-charcoal fade-in-up">
+                Our Simple 3-Step Roofing Process
+            </h2>
+
+            <div
+                class="relative flex flex-col md:flex-row justify-between items-start md:items-center space-y-12 md:space-y-0 md:space-x-12">
+                <div
+                    class="hidden md:block absolute top-[40px] left-[160px] right-[120px] h-1 bg-slate-300 mx-10 fade-in-up">
+                </div>
+                <!-- <div class="md:hidden absolute left-6 top-0 bottom-0 w-1 bg-slate-300"></div> -->
+
+                <div class="relative flex flex-col items-start md:items-center text-left md:text-center p-4 w-full md:w-1/3 fade-in-up"
+                    style="transition-delay: 0.1s;">
+                    <div
+                        class="relative z-10 w-12 h-12 flex items-center justify-center rounded-full bg-primary-red text-white font-bold text-xl ring-4 ring-white ring-offset-4 ring-offset-warm-neutral mb-4">
+                        1</div>
+                    <h3 class="text-xl font-heading font-semibold mb-2 text-dark-charcoal">Inspect & Assess</h3>
+                    <p class="text-slate-muted">We conduct a thorough, complimentary roof inspection to identify the
+                        exact scope of work and potential issues.</p>
+                </div>
+
+                <div class="relative flex flex-col items-start md:items-center text-left md:text-center p-4 w-full md:w-1/3 fade-in-up"
+                    style="transition-delay: 0.2s;">
+                    <div
+                        class="relative z-10 w-12 h-12 flex items-center justify-center rounded-full bg-primary-red text-white font-bold text-xl ring-4 ring-white ring-offset-4 ring-offset-warm-neutral mb-4">
+                        2</div>
+                    <h3 class="text-xl font-heading font-semibold mb-2 text-dark-charcoal">Detailed Quote</h3>
+                    <p class="text-slate-muted">You receive a clear, no-obligation quote with transparent pricing for
+                        materials, labor, and timeline.</p>
+                </div>
+
+                <div class="relative flex flex-col items-start md:items-center text-left md:text-center p-4 w-full md:w-1/3 fade-in-up"
+                    style="transition-delay: 0.3s;">
+                    <div
+                        class="relative z-10 w-12 h-12 flex items-center justify-center rounded-full bg-primary-red text-white font-bold text-xl ring-4 ring-white ring-offset-4 ring-offset-warm-neutral mb-4">
+                        3</div>
+                    <h3 class="text-xl font-heading font-semibold mb-2 text-dark-charcoal">Execute & Deliver</h3>
+                    <p class="text-slate-muted">Our certified team completes the project efficiently, on budget, and
+                        ensures the site is spotless afterward.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-16 sm:py-24 bg-dark-charcoal text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-center mb-12 fade-in-up">
+                Our Work Portfolio
+            </h2>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4" id="gallery-grid">
+                <a href="https://plus.unsplash.com/premium_photo-1682617326551-4749611516f6?q=80&w=1333&auto=format&fit=crop"
+                    data-lightbox-img="1"
+                    class="group relative block overflow-hidden rounded-lg cursor-pointer aspect-[4/3] fade-in-up"
+                    style="transition-delay: 0.1s;">
+                    <img loading="lazy"
+                        src="https://plus.unsplash.com/premium_photo-1682617326551-4749611516f6?q=80&w=1333&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Completed Roof Project 1"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-dark-charcoal/40 group-hover:bg-primary-red/50 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                        </svg>
+                    </div>
+                </a>
+
+                <a href="https://plus.unsplash.com/premium_photo-1663133597256-e84899c6e860?q=80&w=1172&auto=format&fit=crop"
+                    data-lightbox-img="2"
+                    class="group relative block overflow-hidden rounded-lg cursor-pointer aspect-[4/5] fade-in-up"
+                    style="transition-delay: 0.2s;">
+                    <img loading="lazy"
+                        src="https://plus.unsplash.com/premium_photo-1663133597256-e84899c6e860?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Completed Roof Project 2"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-dark-charcoal/40 group-hover:bg-primary-red/50 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                        </svg>
+                    </div>
+                </a>
+
+                <a href="https://images.unsplash.com/photo-1635424824849-1b09bdcc55b1?q=80&w=1171&auto=format&fit=crop"
+                    data-lightbox-img="3"
+                    class="group relative block overflow-hidden rounded-lg cursor-pointer aspect-square fade-in-up"
+                    style="transition-delay: 0.3s;">
+                    <img loading="lazy"
+                        src="https://images.unsplash.com/photo-1635424824849-1b09bdcc55b1?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Completed Roof Project 3"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-dark-charcoal/40 group-hover:bg-primary-red/50 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                        </svg>
+                    </div>
+                </a>
+
+                <a href="https://plus.unsplash.com/premium_photo-1683140940649-71864ae8156e?q=80&w=1170&auto=format&fit=crop"
+                    data-lightbox-img="4"
+                    class="group relative block overflow-hidden rounded-lg cursor-pointer aspect-[3/4] fade-in-up"
+                    style="transition-delay: 0.4s;">
+                    <img loading="lazy"
+                        src="https://plus.unsplash.com/premium_photo-1683140940649-71864ae8156e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Completed Roof Project 4"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-dark-charcoal/40 group-hover:bg-primary-red/50 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                        </svg>
+                    </div>
+                </a>
+
+                <a href="https://cdn.pixabay.com/photo/2019/04/13/22/22/roof-4125765_1280.jpg" data-lightbox-img="5"
+                    class="group relative block overflow-hidden rounded-lg cursor-pointer aspect-[5/4] fade-in-up"
+                    style="transition-delay: 0.5s;">
+                    <img loading="lazy" src="https://cdn.pixabay.com/photo/2019/04/13/22/22/roof-4125765_1280.jpg"
+                        alt="Completed Roof Project 5"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-dark-charcoal/40 group-hover:bg-primary-red/50 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                        </svg>
+                    </div>
+                </a>
+
+                <a href="https://images.unsplash.com/photo-1755114203680-d39d95efa82c?q=80&w=1074&auto=format&fit=crop"
+                    data-lightbox-img="6"
+                    class="group relative block overflow-hidden rounded-lg cursor-pointer aspect-square fade-in-up"
+                    style="transition-delay: 0.6s;">
+                    <img loading="lazy"
+                        src="https://images.unsplash.com/photo-1755114203680-d39d95efa82c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Completed Roof Project 6"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-dark-charcoal/40 group-hover:bg-primary-red/50 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox"
+        class="fixed inset-0 z-[100] bg-dark-charcoal/95 hidden items-center justify-center p-4 transition-opacity duration-300 opacity-0"
+        aria-modal="true" role="dialog" aria-hidden="true">
+        <button id="lightbox-close"
+            class="absolute top-4 right-4 text-white text-3xl p-2 rounded-full bg-dark-charcoal/50 hover:bg-primary-red transition-colors focus:outline-none"
+            aria-label="Close Lightbox">
+            &times;
+        </button>
+        <div class="relative w-full max-w-5xl max-h-[90vh]">
+            <img id="lightbox-image" src="" alt="Gallery Image"
+                class="w-full h-full object-contain max-h-[90vh] transition-transform duration-300">
+
+            <button id="lightbox-prev"
+                class="absolute left-4 top-1/2 transform -translate-y-1/2 p-3 rounded-full bg-dark-charcoal/50 text-white hover:bg-primary-red transition-colors focus:outline-none"
+                aria-label="Previous image">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+
+            <button id="lightbox-next"
+                class="absolute right-4 top-1/2 transform -translate-y-1/2 p-3 rounded-full bg-dark-charcoal/50 text-white hover:bg-primary-red transition-colors focus:outline-none"
+                aria-label="Next image">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <section id="testimonials" class="py-16 sm:py-24 bg-warm-neutral">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-center mb-12 text-dark-charcoal fade-in-up">
+                What Our Customers Say
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary-red fade-in-up"
+                    style="transition-delay: 0.1s;">
+                    <div class="flex items-center mb-4">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4" src="https://i.pravatar.cc/150?img=1"
+                            alt="Customer Avatar">
+                        <div>
+                            <p class="font-heading font-semibold text-dark-charcoal">Jane D.</p>
+                            <div class="text-primary-red text-sm">★★★★★</div>
+                        </div>
+                    </div>
+                    <blockquote class="italic text-slate-muted leading-relaxed">
+                        "They fixed my leak the same week. Professional, clean, and fast — 5/5. Their team was
+                        respectful of my property and the repair looks flawless."
+                    </blockquote>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary-red fade-in-up"
+                    style="transition-delay: 0.2s;">
+                    <div class="flex items-center mb-4">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4" src="https://i.pravatar.cc/150?img=2"
+                            alt="Customer Avatar">
+                        <div>
+                            <p class="font-heading font-semibold text-dark-charcoal">Michael B.</p>
+                            <div class="text-primary-red text-sm">★★★★★</div>
+                        </div>
+                    </div>
+                    <blockquote class="italic text-slate-muted leading-relaxed">
+                        "Got a full roof replacement. The crew was efficient and the project finished on time and on
+                        budget. Great communication throughout the process."
+                    </blockquote>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary-red fade-in-up"
+                    style="transition-delay: 0.3s;">
+                    <div class="flex items-center mb-4">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4" src="https://i.pravatar.cc/150?img=3"
+                            alt="Customer Avatar">
+                        <div>
+                            <p class="font-heading font-semibold text-dark-charcoal">Sarah K.</p>
+                            <div class="text-primary-red text-sm">★★★★★</div>
+                        </div>
+                    </div>
+                    <blockquote class="italic text-slate-muted leading-relaxed">
+                        "Excellent service! They helped with the insurance claim process and the new gutters look
+                        amazing. Highly recommend Goldendach."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="affiliations" class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-lg font-medium text-slate-muted mb-8">Trusted by leading industry partners and
+                manufacturers:</p>
+            <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
+                <img class="h-10 opacity-70 hover:opacity-100 transition-opacity duration-300"
+                    src="./img/LOC8NEARMEl.png" alt="Manufacturer Logo 1">
+                <img class="h-10 opacity-70 hover:opacity-100 transition-opacity duration-300"
+                    src="./img/1.png" alt="Affiliation Logo 2">
+                <img class="h-10 opacity-70 hover:opacity-100 transition-opacity duration-300"
+                    src="./img/2.png" alt="Manufacturer Logo 3">
+                <img class="h-10 opacity-70 hover:opacity-100 transition-opacity duration-300"
+                    src="./img/3.png" alt="Affiliation Logo 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-16 sm:py-24 bg-warm-neutral">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-center mb-12 text-dark-charcoal fade-in-up">
+                Frequently Asked Questions
+            </h2>
+
+            <div class="space-y-4" id="faq-accordion">
+                <div class="bg-white rounded-lg shadow-md border border-slate-200 overflow-hidden fade-in-up"
+                    style="transition-delay: 0.1s;">
+                    <button
+                        class="w-full text-left p-5 font-semibold text-lg text-dark-charcoal flex justify-between items-center focus:outline-none"
+                        aria-expanded="false" aria-controls="faq-panel-1" id="faq-toggle-1">
+                        How long does a typical roof replacement take?
+                        <span class="transform transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="p-5 pt-0 text-slate-muted hidden" id="faq-panel-1" aria-labelledby="faq-toggle-1">
+                        <p>
+                            For an average residential home, a full roof replacement typically takes <strong>1 to 3
+                                days</strong> from start to finish. The exact duration depends on the roof size,
+                            complexity, weather conditions, and materials used. We provide a precise timeline in your
+                            quote.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md border border-slate-200 overflow-hidden fade-in-up"
+                    style="transition-delay: 0.2s;">
+                    <button
+                        class="w-full text-left p-5 font-semibold text-lg text-dark-charcoal flex justify-between items-center focus:outline-none"
+                        aria-expanded="false" aria-controls="faq-panel-2" id="faq-toggle-2">
+                        Do you offer free estimates or inspections?
+                        <span class="transform transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="p-5 pt-0 text-slate-muted hidden" id="faq-panel-2" aria-labelledby="faq-toggle-2">
+                        <p>
+                            Yes, we offer **completely free and no-obligation estimates and inspections** for repair or
+                            replacement projects. Contact us today to schedule yours.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md border border-slate-200 overflow-hidden fade-in-up"
+                    style="transition-delay: 0.3s;">
+                    <button
+                        class="w-full text-left p-5 font-semibold text-lg text-dark-charcoal flex justify-between items-center focus:outline-none"
+                        aria-expanded="false" aria-controls="faq-panel-3" id="faq-toggle-3">
+                        Are you licensed and insured?
+                        <span class="transform transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="p-5 pt-0 text-slate-muted hidden" id="faq-panel-3" aria-labelledby="faq-toggle-3">
+                        <p>
+                            Absolutely. We are fully licensed, bonded, and carry extensive liability and workers'
+                            compensation insurance. We can provide documentation upon request for your peace of mind.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md border border-slate-200 overflow-hidden fade-in-up"
+                    style="transition-delay: 0.4s;">
+                    <button
+                        class="w-full text-left p-5 font-semibold text-lg text-dark-charcoal flex justify-between items-center focus:outline-none"
+                        aria-expanded="false" aria-controls="faq-panel-4" id="faq-toggle-4">
+                        Do you assist with insurance claims?
+                        <span class="transform transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="p-5 pt-0 text-slate-muted hidden" id="faq-panel-4" aria-labelledby="faq-toggle-4">
+                        <p>
+                            Yes, navigating insurance claims can be complex. We are experienced in working with all
+                            major insurance companies and can help guide you through the process, from initial
+                            inspection to final approval.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 sm:py-24 bg-dark-charcoal text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-center mb-12 fade-in-up">
+                Get a Free, Fast Roofing Quote
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+                <div class="bg-slate-800 p-8 rounded-xl shadow-2xl fade-in-up" style="transition-delay: 0.1s;">
+                    <h3 class="text-2xl font-heading font-semibold mb-6">Request Service Now</h3>
+
+                    <form id="contact-form" class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-300 mb-1">Full Name
+                                    *</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full p-3 rounded-md border border-slate-600 bg-slate-700 text-white focus:ring-primary-red focus:border-primary-red"
+                                    placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-300 mb-1">Email *</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full p-3 rounded-md border border-slate-600 bg-slate-700 text-white focus:ring-primary-red focus:border-primary-red"
+                                    placeholder="john@example.com">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-slate-300 mb-1">Phone *</label>
+                                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}"
+                                    class="w-full p-3 rounded-md border border-slate-600 bg-slate-700 text-white focus:ring-primary-red focus:border-primary-red"
+                                    placeholder="(555) 123-4567">
+                            </div>
+                            <div>
+                                <label for="service-interest"
+                                    class="block text-sm font-medium text-slate-300 mb-1">Service Interest *</label>
+                                <select id="service-interest" name="service-interest" required
+                                    class="w-full p-3 rounded-md border border-slate-600 bg-slate-700 text-white focus:ring-primary-red focus:border-primary-red">
+                                    <option value="" class="text-slate-400">Select a Service...</option>
+                                    <option value="New Installation">New Installation</option>
+                                    <option value="Roof Replacement">Roof Replacement</option>
+                                    <option value="Repair">Roof Repair/Leak Fix</option>
+                                    <option value="Inspection">Inspection/Maintenance</option>
+                                    <option value="Gutters">Gutters/Drainage</option>
+                                    <option value="Other">Other/Not sure</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="address" class="block text-sm font-medium text-slate-300 mb-1">Property Address
+                                (Optional)</label>
+                            <input type="text" id="address" name="address"
+                                class="w-full p-3 rounded-md border border-slate-600 bg-slate-700 text-white focus:ring-primary-red focus:border-primary-red"
+                                placeholder="123 Example Street">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-slate-300 mb-1">Project
+                                Details/Message *</label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="w-full p-3 rounded-md border border-slate-600 bg-slate-700 text-white focus:ring-primary-red focus:border-primary-red"
+                                placeholder="Describe your roofing issue or project..."></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full h-[52px] bg-primary-red hover:bg-[#B93629] text-white text-lg font-bold rounded-md shadow-xl transition-all duration-300 transform hover:scale-[1.01] focus:ring-4 focus:ring-primary-red/50">
+                            Submit Request & Get Quote
+                        </button>
+                        <p id="form-message" class="text-center pt-2 text-sm text-slate-300"></p>
+                    </form>
+                </div>
+
+                <div class="space-y-8 fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="bg-slate-800 p-8 rounded-xl shadow-2xl">
+                        <h3 class="text-2xl font-heading font-semibold mb-4 text-primary-red">Contact Details</h3>
+                        <p class="text-lg font-semibold mb-4">We're here to help protect your most valuable asset.</p>
+
+                        <div class="space-y-3">
+                            <p class="flex items-center text-slate-300">
+                                <svg class="w-6 h-6 mr-3 text-primary-red" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-3.28a1 1 0 01-.948-.684l-1.498-4.493a1 1 0 01.502-1.21l2.257-1.13a11.042 11.042 0 00-5.516-5.516l-1.13 2.257a1 1 0 01-1.21.502l-4.493-1.498A1 1 0 013 7.72V5z">
+                                    </path>
+                                </svg>
+                                <a href="tel:+49017673851162"
+                                    class="hover:text-primary-red transition-colors font-medium"> +49-017673851162</a>
+                            </p>
+                            <p class="flex items-center text-slate-300">
+                                <svg class="w-6 h-6 mr-3 text-primary-red" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-9 13h9V8l-9 6-9-6v13h9z"></path>
+                                </svg>
+                                <a href="mailto:goldendach@yahoo.com"
+                                    class="hover:text-primary-red transition-colors font-medium">goldendach@yahoo.com</a>
+                            </p>
+                            <p class="flex items-start text-slate-300">
+                                <svg class="w-6 h-6 mr-3 mt-1 text-primary-red flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.99 1.99 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                <span>Alsenzstraße 140, 67722 Winnweiler, Germany</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-xl overflow-hidden shadow-2xl h-64 lg:h-80">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5116.566228345379!2d7.30473!3d50.118424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797cc6973da8163%3A0x1778927bb80ecffc!2sRheinland-Pfalz%2C%20Deutschland!5e0!3m2!1sde!2sus!4v1758812081429!5m2!1sde!2sus"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Location Map of Goldendach Office">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark-charcoal/90 border-t border-slate-700 py-12 text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                <div class="col-span-2 lg:col-span-2">
+                    <a href="#" class="text-3xl font-heading font-bold text-white tracking-tight mb-4 block">
+                        <span class="text-primary-red">Golden</span>dach
+                    </a>
+                    <p class="mb-4">
+                        Your trusted, local roofing experts since 2016. Licensed, insured, and committed to quality.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-heading font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#services" class="hover:text-primary-red transition-colors">Our Services</a></li>
+                        <li><a href="#gallery" class="hover:text-primary-red transition-colors">Gallery</a></li>
+                        <li><a href="#testimonials" class="hover:text-primary-red transition-colors">Testimonials</a>
+                        </li>
+                        <li><a href="#faq" class="hover:text-primary-red transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-heading font-semibold text-white mb-4">Contact & Hours</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="tel:+49017673851162"
+                                class="hover:text-primary-red transition-colors">+49-017673851162</a></li>
+                        <li><a href="mailto:goldendach@yahoo.com" class="hover:text-primary-red transition-colors">Email
+                                Us</a></li>
+                        <li class="pt-2 text-white font-medium">Mon-Fri: 8:00am – 5:00pm</li>
+                        <li class="text-xs">24/7 Emergency Line</li>
+                    </ul>
+                </div>
+
+                <div class="col-span-2 md:col-span-1">
+                    <h4 class="font-heading font-semibold text-white mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="[FACEBOOK_URL]" target="_blank" aria-label="Facebook"
+                            class="text-white hover:text-primary-red transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.246c-1.247 0-1.628.777-1.628 1.563V12h2.77l-.443 2.89h-2.327v6.987C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="[TWITTER_URL]" target="_blank" aria-label="Twitter"
+                            class="text-white hover:text-primary-red transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22 4.01c-.728.322-1.503.538-2.32.637.828-.497 1.46-1.282 1.76-2.213-.776.46-1.637.795-2.55.975C17.755 3.52 16.634 3 15.397 3c-2.456 0-4.444 1.988-4.444 4.444 0 .35.04.69.118 1.017-3.7-.186-6.99-1.956-9.19-4.634-.383.65-.603 1.405-.603 2.212 0 1.54 1.047 2.812 2.44 3.393-.974-.03-1.886-.298-2.68-75-.01 1.76-.01 2.45.626 3.01C4.382 13.926 5.617 14.5 7.18 14.5c-.347.094-.707.14-1.077.14-.265 0-.523-.017-.775-.05 1.155.91 2.508 1.45 4.025 1.45 2.81 0 5.17-1.996 5.17-5.17 0-.078-.002-.157-.005-.235 1.34-.967 2.49-2.17 3.4-3.56z" />
+                            </svg>
+                        </a>
+                        <a href="[LINKEDIN_URL]" target="_blank" aria-label="LinkedIn"
+                            class="text-white hover:text-primary-red transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22 0H2C.897 0 0 .897 0 2v20c0 1.103.897 2 2 2h20c1.103 0 2-.897 2-2V2c0-1.103-.897-2-2-2zM8.047 18.006H5.334V8.042h2.713v9.964zM6.68 6.945c-.941 0-1.706-.764-1.706-1.706 0-.941.765-1.706 1.706-1.706.94 0 1.706.765 1.706 1.706 0 .942-.766 1.706-1.706 1.706zm13.326 11.061h-2.716v-4.99a2.585 2.585 0 00-2.585-2.585c-1.42 0-1.707 1.053-1.707 2.072v5.503h-2.717V8.042h2.717v1.14c.376-.66.828-1.144 1.956-1.144 2.513 0 4.414 1.63 4.414 5.148v4.82z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="mt-12 pt-8 border-t border-slate-700 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; 2025 Goldendach. All rights reserved.</p>
+                <div class="space-x-4 mt-3 md:mt-0">
+                    <a href="[PRIVACY_POLICY_URL]" class="hover:text-primary-red transition-colors">Privacy Policy</a>
+                    <a href="[TERMS_OF_SERVICE_URL]" class="hover:text-primary-red transition-colors">Terms of
+                        Service</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile lg:hidden"><!-- WhatsApp floating button — fixed 30px from left & bottom -->
+            <a href="https://wa.me/15551234567?text=Hi%20there,%20I%20found%20you%20online!" target="_blank"
+                rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed left-[30px] bottom-[15px] z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-lg transform-gpu transition-transform duration-200 focus:outline-none focus:ring-4 focus:ring-green-300
+         bg-green-600 hover:scale-105 hover:bg-green-700 active:scale-95">
+                <!-- WhatsApp SVG (white) -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none"
+                    aria-hidden="true">
+                    <path fill="white"
+                        d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.373 0 .001 5.373.001 12.001c0 2.115.555 4.153 1.607 5.96L0 24l6.182-1.602A11.926 11.926 0 0 0 12 24c6.627 0 12-5.373 12-11.999 0-3.205-1.25-6.213-3.48-8.52zM12 21.6c-1.5 0-2.97-.39-4.26-1.13l-.31-.17-3.67.95.98-3.58-.2-.36A8.3 8.3 0 0 1 3.6 12.001 8.4 8.4 0 0 1 12 3.6c4.65 0 8.4 3.75 8.4 8.4S16.65 21.6 12 21.6z" />
+                    <path fill="white"
+                        d="M17.33 14.36c-.27-.13-1.6-.79-1.85-.88-.25-.09-.43-.13-.62.13-.19.26-.75.88-.92 1.06-.17.19-.33.21-.6.07-.27-.13-1.14-.42-2.17-1.33-.8-.71-1.34-1.59-1.5-1.86-.15-.27-.02-.42.12-.55.12-.12.27-.33.4-.5.13-.17.17-.3.27-.5.09-.19.04-.36-.02-.5-.07-.14-.62-1.5-.85-2.06-.22-.54-.45-.47-.62-.48-.16 0-.36-.01-.55-.01-.19 0-.5.07-.76.36-.26.29-1 1-1 2.44 0 1.44 1.02 2.83 1.16 3.03.14.2 2.01 3.07 4.86 4.3 1.86.82 2.61.86 3.36.72.54-.1 1.6-.65 1.83-1.28.22-.63.22-1.17.15-1.28-.07-.11-.25-.18-.52-.31z" />
+                </svg>
+            </a>
+        </div>
+        <div class="desktop hidden lg:block">
+            <!-- WhatsApp floating button — fixed 30px from left & bottom -->
+            <a href="https://wa.me/15551234567?text=Hi%20there,%20I%20found%20you%20online!" target="_blank"
+                rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed right-[30px] bottom-[30px] z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-lg transform-gpu transition-transform duration-200 focus:outline-none focus:ring-4 focus:ring-green-300
+             bg-green-600 hover:scale-105 hover:bg-green-700 active:scale-95">
+                <!-- WhatsApp SVG (white) -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none"
+                    aria-hidden="true">
+                    <path fill="white"
+                        d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.373 0 .001 5.373.001 12.001c0 2.115.555 4.153 1.607 5.96L0 24l6.182-1.602A11.926 11.926 0 0 0 12 24c6.627 0 12-5.373 12-11.999 0-3.205-1.25-6.213-3.48-8.52zM12 21.6c-1.5 0-2.97-.39-4.26-1.13l-.31-.17-3.67.95.98-3.58-.2-.36A8.3 8.3 0 0 1 3.6 12.001 8.4 8.4 0 0 1 12 3.6c4.65 0 8.4 3.75 8.4 8.4S16.65 21.6 12 21.6z" />
+                    <path fill="white"
+                        d="M17.33 14.36c-.27-.13-1.6-.79-1.85-.88-.25-.09-.43-.13-.62.13-.19.26-.75.88-.92 1.06-.17.19-.33.21-.6.07-.27-.13-1.14-.42-2.17-1.33-.8-.71-1.34-1.59-1.5-1.86-.15-.27-.02-.42.12-.55.12-.12.27-.33.4-.5.13-.17.17-.3.27-.5.09-.19.04-.36-.02-.5-.07-.14-.62-1.5-.85-2.06-.22-.54-.45-.47-.62-.48-.16 0-.36-.01-.55-.01-.19 0-.5.07-.76.36-.26.29-1 1-1 2.44 0 1.44 1.02 2.83 1.16 3.03.14.2 2.01 3.07 4.86 4.3 1.86.82 2.61.86 3.36.72.54-.1 1.6-.65 1.83-1.28.22-.63.22-1.17.15-1.28-.07-.11-.25-.18-.52-.31z" />
+                </svg>
+            </a>
+        </div>
+
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
